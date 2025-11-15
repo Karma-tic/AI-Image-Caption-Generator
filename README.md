@@ -23,11 +23,10 @@ Pillow (PIL) (for image processing)
 The model can successfully generate detailed captions for new, unseen images.
 
 Example 1: Surfer
-
 Model Prediction: "surfer riding a wave in the ocean on a sunny day"
 
 Example 2: My image 
-
-Model Prediction: a close up of a man with a mustache and a plaid shirt
+Model Prediction: a close up of a man with a mustache and a plaid shirt.
 
 You can view the final, working code in the project's Colab Notebook.
+https://colab.research.google.com/github/Karma-tic/AI-Image-Caption-Generator/blob/main/model.ipynb
