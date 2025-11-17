@@ -1,32 +1,56 @@
-AI Image Caption Generator
-🚀 Project Status: [Completed]
-This project, part of my AI/ML internship with Evoastra, implements a state-of-the-art Vision-Encoder-Decoder model to generate accurate, human-like captions for any given image.
+# 🚀 Karmatix AI - Image Captioning
 
-🎯 Project Goal
-The objective of this project was to build a system that can understand the content of an image and generate a descriptive, coherent caption. Instead of training a simple model from scratch (which can be inefficient), I implemented a state-of-the-art, pre-trained Transformer model to achieve high-quality results immediately.
+This is a multi-featured, interactive AI web application that generates image captions and much more. This project was built using **Streamlit** (for the front-end) and multiple **Hugging Face Transformer** models (for the AI).
 
-🤖 Final Model: Salesforce BLIP
-This project uses BLIP (Bootstrapping Language-Image Pre-training), a powerful model from Salesforce/Hugging Face. This Vision-Encoder-Decoder model is pre-trained on massive datasets and is highly effective at understanding the complex relationships between images and text.
+![Karmatix App Demo](YOUR_SCREENSHOT_LINK_HERE.png)
 
-🛠️ Tech Stack
-Python
+---
 
-Hugging Face transformers (for loading and using the model)
+## ✨ Features
 
-PyTorch
+* **AI Image Captioning:** Upload any image and get a detailed, descriptive caption using the **Salesforce BLIP** model.
+* **AI Object Detection:** See a list of all objects the **DETR-ResNet-50** model can identify in your image.
+* **AI Sentiment Analysis:** Instantly analyze the "vibe" (Positive/Negative) of the generated caption.
+* **Multi-Language Translation:** Translate any caption into English, Hindi, Spanish, French, or German using `deep-translator`.
+* **Text-to-Speech:** Listen to the translated caption in its native language using `gTTS`.
+* **Interactive UI:** A polished, modern UI built with Streamlit, custom CSS, and a Lottie animation.
 
-Google Colab (for running the model)
+---
 
-Pillow (PIL) (for image processing)
+## 🛠️ Tech Stack
 
-🌟 Final Results & Demo
-The model can successfully generate detailed captions for new, unseen images.
+* **Front-End:** Streamlit
+* **AI/ML:** PyTorch, Hugging Face `transformers`
+* **AI Models:**
+    * `Salesforce/blip-image-captioning-large` (Captioning)
+    * `facebook/detr-resnet-50` (Object Detection)
+    * `distilbert-base-uncased-finetuned-sst-2-english` (Sentiment Analysis)
+* **Utilities:** `deep-translator`, `gTTS`, `streamlit-lottie`, `Pillow`
 
-Example 1: Surfer
-Model Prediction: "surfer riding a wave in the ocean on a sunny day"
+---
 
-Example 2: My image 
-Model Prediction: a close up of a man with a mustache and a plaid shirt.
+## 🏃 How to Run This Project Locally
 
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/Karma-tic/AI-Image-Caption-Generator.git](https://github.com/Karma-tic/AI-Image-Caption-Generator.git)
+    cd AI-Image-Caption-Generator
+    ```
+
+2.  **Create and activate a virtual environment:**
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
+
+3.  **Install the required libraries:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4.  **Run the Streamlit app:**
+    ```bash
+    streamlit run app.py
+    ```
 You can view the final, working code in the project's Colab Notebook.
 https://colab.research.google.com/github/Karma-tic/AI-Image-Caption-Generator/blob/main/model.ipynb
