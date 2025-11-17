@@ -2,7 +2,7 @@
 
 This is a multi-featured, interactive AI web application that generates image captions and much more. This project was built using **Streamlit** (for the front-end) and multiple **Hugging Face Transformer** models (for the AI).
 
-![Karmatix App Demo](YOUR_SCREENSHOT_LINK_HERE.png)
+![Karmatix App Demo]([(https://github.com/user-attachments/assets/f89be3f4-32f6-4dd4-bf6a-344ae6267fd6))
 
 ---
 
